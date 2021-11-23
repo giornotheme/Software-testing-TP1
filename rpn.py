@@ -25,4 +25,10 @@ def rpn(stringtotest):
                 stack.append(temp)
                 print(stack)
                 i = i + 1
+            elif splitstring[i] == "*":
+                temp = stack[0] * stack[1]
+                stack.clear()
+                stack.append(temp)
+                print(stack)
+                i = i + 1
     return stack[0]
